@@ -3,8 +3,6 @@ package Protocol::SocketIO::Message;
 use strict;
 use warnings;
 
-our $VERSION = '0.0001';
-
 use Encode ();
 use JSON   ();
 use Try::Tiny;
