@@ -5,7 +5,6 @@ use warnings;
 
 use Encode ();
 use JSON   ();
-use Try::Tiny;
 
 use overload '""' => sub { $_[0]->to_bytes }, fallback => 1;
 
@@ -70,10 +69,10 @@ sub parse {
     }
 
     if ($self->{type} eq 'json_message' || $self->{type} eq 'event') {
-        try {
+        eval {
             $self->{data} = JSON::decode_json($self->{data});
-        }
-        catch {
+            1;
+        } or do {
             delete $self->{data};
         };
 

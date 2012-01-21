@@ -16,8 +16,7 @@ perl_version '5.008007';
 requires 'Scalar::Util' => '0';
 requires 'Encode'       => '0';
 
-requires 'JSON'      => '0';
-requires 'Try::Tiny' => '0';
+requires 'JSON' => '0';
 
 tests 't/*.t t/*/*.t t/*/*/*.t t/*/*/*/*.t';
 
