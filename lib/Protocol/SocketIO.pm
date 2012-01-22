@@ -3,18 +3,18 @@ package Protocol::SocketIO;
 use strict;
 use warnings;
 
-our $VERSION = '0.0001';
+our $VERSION = '0.0002';
 
 1;
 __END__
 
 =head1 NAME
 
-Protocol::SocketiO - Socket.IO protocol implementation
+Protocol::SocketIO - Socket.IO protocol implementation
 
 =head1 DESCRIPTION
 
-L<Protocol::SocketiO> is a set of modules that implement Socket.IO protocol
+L<Protocol::SocketIO> is a set of modules that implement Socket.IO protocol
 without depending on event loops, HTTP parsers and HTTP servers.
 
 =head1 SEE ALSO

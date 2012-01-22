@@ -30,3 +30,26 @@ sub to_bytes {
 }
 
 1;
+__END__
+
+=head1 NAME
+
+Protocol::SocketIO::Handhskae - Socket.IO handshake construction
+
+=head1 SYNOPSIS
+
+    my $handshake = Protocol::SocketIO::Handshake->new(
+        session_id        => 1234567890,
+        heartbeat_timeout => 10,
+        close_timeout     => 15,
+        transports        => [qw/websocket xhr-polling/]
+    );
+    $handshake->to_bytes; # '1234567890:10:15:websocket,xhr-polling';
+
+=head1 METHODS
+
+=head2 C<new>
+
+=head2 C<to_bytes>
+
+=cut

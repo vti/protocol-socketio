@@ -132,7 +132,7 @@ __END__
 
 =head1 NAME
 
-Protocol::SocketiO::Message - Socket.IO message parsing and building
+Protocol::SocketIO::Message - Socket.IO message parsing and building
 
 =head1 SYNOPSIS
 
@@ -153,7 +153,7 @@ Protocol::SocketiO::Message - Socket.IO message parsing and building
 
 =head1 DESCRIPTION
 
-L<Protocol::SocketiO::Message> parsers and builds Socket.IO messages.
+L<Protocol::SocketIO::Message> parsers and builds Socket.IO messages.
 
 =head1 METHODS
 

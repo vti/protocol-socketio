@@ -68,3 +68,28 @@ sub transport_type {
 }
 
 1;
+__END__
+
+=head1 NAME
+
+Protocol::SocketIO::Path - Socket.IO path parsing
+
+=head1 SYNOPSIS
+
+    my $path = Protocol::SocketIO::Path->new->parse('/1/xhr-polling/1234567890');
+
+=head1 METHODS
+
+=head2 C<new>
+
+=head2 C<parse>
+
+=head2 C<protocol_version>
+
+=head2 C<session_id>
+
+=head2 C<transport_type>
+
+=head2 C<is_handshake>
+
+=cut

@@ -1,5 +1,9 @@
 Revision history for perl module Protocol::SocketIO
 
+0.0001 2012-01-23
+
+ - Fixed POD typos
+
 0.0001 2012-01-21
 
  - Initial release
