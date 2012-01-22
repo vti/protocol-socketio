@@ -34,7 +34,7 @@ __END__
 
 =head1 NAME
 
-Protocol::SocketIO::Handhskae - Socket.IO handshake construction
+Protocol::SocketIO::Handshake - Socket.IO handshake construction
 
 =head1 SYNOPSIS
 
