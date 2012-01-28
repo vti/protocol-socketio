@@ -179,4 +179,6 @@ L<Protocol::SocketIO::Message> parsers and builds Socket.IO messages.
 
 =head2 C<to_bytes>
 
+=head2 C<to_string>
+
 =cut
