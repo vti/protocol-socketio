@@ -4,7 +4,7 @@ use utf8;
 
 use Encode ();
 
-use Test::More tests => 28;
+use Test::More tests => 29;
 
 use_ok('Protocol::SocketIO::Message');
 
@@ -28,6 +28,9 @@ is $m->to_bytes, '3:1::blabla';
 
 $m = Protocol::SocketIO::Message->new(type => 'message', id => 1, data => 'привет');
 is $m->to_bytes, Encode::encode('UTF-8', '3:1::привет');
+
+$m = Protocol::SocketIO::Message->new(type => 'message', id => 1, data => 'привет');
+is $m->to_string, '3:1::привет';
 
 $m = Protocol::SocketIO::Message->new(id => 1, data => 'blabla');
 is $m->to_bytes, '3:1::blabla';

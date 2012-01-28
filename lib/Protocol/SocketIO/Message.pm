@@ -6,7 +6,7 @@ use warnings;
 use Encode ();
 use JSON   ();
 
-use overload '""' => sub { $_[0]->to_bytes }, fallback => 1;
+use overload '""' => sub { $_[0]->to_string }, fallback => 1;
 
 our %TYPES = (
     'disconnect'   => 0,
@@ -125,6 +125,12 @@ sub to_bytes {
     }
 
     return join ':', reverse @message;
+}
+
+sub to_string {
+    my $self = shift;
+
+    return Encode::decode('UTF-8', $self->to_bytes);
 }
 
 1;

@@ -1,5 +1,9 @@
 Revision history for perl module Protocol::SocketIO
 
+0.04 2012-01-28
+
+ - Stringify by using to_string method
+
 0.0003 2012-01-23
 
  - Fixed POD typos

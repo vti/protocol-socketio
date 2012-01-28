@@ -3,7 +3,7 @@ package Protocol::SocketIO;
 use strict;
 use warnings;
 
-our $VERSION = '0.0003';
+our $VERSION = '0.04';
 
 1;
 __END__
