@@ -1,5 +1,9 @@
 Revision history for perl module Protocol::SocketIO
 
+{{$NEXT}}
+
+ - Fix test depending on hash sort (perl-5.18)
+
 0.04 2012-01-28
 
  - Stringify by using to_string method
