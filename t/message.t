@@ -4,7 +4,7 @@ use utf8;
 
 use Encode ();
 
-use Test::More tests => 29;
+use Test::More tests => 31;
 
 use_ok('Protocol::SocketIO::Message');
 
@@ -51,7 +51,9 @@ $m = Protocol::SocketIO::Message->new(
     id   => 1,
     data => {name => 'foo', args => ['foo']}
 );
-is $m->to_bytes, '5:1::{"args":["foo"],"name":"foo"}';
+like $m->to_bytes, qr/^5:1::{.*}$/;
+like $m->to_bytes, qr/"args":\["foo"\]/;
+like $m->to_bytes, qr/"name":"foo"/;
 
 $m = Protocol::SocketIO::Message->new->parse('5:1+::{"args":["foo"],"name":"foo"}');
 is $m->id => '1';
