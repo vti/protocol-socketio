@@ -2,6 +2,10 @@ Revision history for perl module Protocol::SocketIO
 
 {{$NEXT}}
 
+0.06 2014-01-07T20:31:03Z
+
+ - just meta files update
+
 0.05 2013-06-22T05:24:37Z
 
  - Fix test depending on hash sort (perl-5.18)
