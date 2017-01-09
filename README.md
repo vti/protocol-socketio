@@ -4,12 +4,12 @@ Protocol::SocketIO - Socket.IO protocol implementation
 
 # DESCRIPTION
 
-[Protocol::SocketIO](http://search.cpan.org/perldoc?Protocol::SocketIO) is a set of modules that implement Socket.IO protocol
+[Protocol::SocketIO](https://metacpan.org/pod/Protocol::SocketIO) is a set of modules that implement Socket.IO protocol
 without depending on event loops, HTTP parsers and HTTP servers.
 
 # SEE ALSO
 
-[PocketIO](http://search.cpan.org/perldoc?PocketIO)
+[PocketIO](https://metacpan.org/pod/PocketIO)
 
 # DEVELOPMENT
 
