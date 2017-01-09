@@ -51,7 +51,7 @@ $m = Protocol::SocketIO::Message->new(
     id   => 1,
     data => {name => 'foo', args => ['foo']}
 );
-like $m->to_bytes, qr/^5:1::{.*}$/;
+like $m->to_bytes, qr/^5:1::\{.*\}$/;
 like $m->to_bytes, qr/"args":\["foo"\]/;
 like $m->to_bytes, qr/"name":"foo"/;
 
